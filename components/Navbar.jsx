@@ -11,12 +11,12 @@ const Navbar = () => {
   const { openSignIn } = useClerk();
   return (
     <nav className="flex items-center justify-between px-6 md:px-16 lg:px-32 py-3 border-b border-gray-300 text-gray-700">
-      <Image
-        className="cursor-pointer w-28 md:w-32"
+      <h1
+        className="cursor-pointer w-28 md:w-32 text-2xl text-black text-nowrap"
         onClick={() => router.push("/")}
-        src={assets.logo}
-        alt="logo"
-      />
+      >
+        <b className="text-orange-500">F</b>ast Shop
+      </h1>
       <div className="flex items-center gap-4 lg:gap-8 max-md:hidden">
         <Link href="/" className="hover:text-gray-900 transition">
           Home
@@ -24,10 +24,10 @@ const Navbar = () => {
         <Link href="/all-products" className="hover:text-gray-900 transition">
           Shop
         </Link>
-        <Link href="/" className="hover:text-gray-900 transition">
+        <Link href="/about-us" className="hover:text-gray-900 transition">
           About Us
         </Link>
-        <Link href="/" className="hover:text-gray-900 transition">
+        <Link href="/contact" className="hover:text-gray-900 transition">
           Contact
         </Link>
 

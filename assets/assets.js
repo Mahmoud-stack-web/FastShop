@@ -9,6 +9,7 @@ import facebook_icon from "./facebook_icon.svg";
 import twitter_icon from "./twitter_icon.svg";
 import box_icon from "./box_icon.svg";
 import product_list_icon from "./product_list_icon.svg";
+import stripe_logo from "./stripe_logo.png"
 import menu_icon from "./menu_icon.svg";
 import arrow_icon from "./arrow_icon.svg";
 import increase_arrow from "./increase_arrow.svg";
@@ -95,7 +96,8 @@ export const assets = {
   product_details_page_apple_earphone_image3,
   product_details_page_apple_earphone_image4,
   product_details_page_apple_earphone_image5,
-  checkmark
+  checkmark,
+  stripe_logo
 };
 
 export const BagIcon = () => {

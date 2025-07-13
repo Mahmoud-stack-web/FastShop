@@ -1,18 +1,19 @@
 import React from "react";
-import { assets } from "@/assets/assets";
-import Image from "next/image";
 
 const Footer = () => {
   return (
     <footer>
       <div className="flex flex-col md:flex-row items-start justify-center px-6 md:px-16 lg:px-32 gap-10 py-14 border-b border-gray-500/30 text-gray-500">
         <div className="w-4/5">
-          <Image className="w-28 md:w-32" src={assets.logo} alt="logo" />
+          <h1 className="text-2xl text-nowrap text-black w-28 md:w-32">
+            <b className="text-orange-500">F</b>ast Shop
+          </h1>
           <p className="mt-6 text-sm">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
+            Welcome to Quickcart! We offer a curated selection of premium
+            electronics, from high-quality headphones to the latest laptops and
+            accessories. Our mission is to provide our customers with
+            cutting-edge technology, exceptional customer service, and a
+            seamless shopping experience.
           </p>
         </div>
 
@@ -27,17 +28,17 @@ const Footer = () => {
               </li>
               <li>
                 <a className="hover:underline transition" href="#">
-                  About us
+                  About Us
                 </a>
               </li>
               <li>
                 <a className="hover:underline transition" href="#">
-                  Contact us
+                  Careers
                 </a>
               </li>
               <li>
                 <a className="hover:underline transition" href="#">
-                  Privacy policy
+                  Privacy Policy
                 </a>
               </li>
             </ul>
@@ -46,16 +47,29 @@ const Footer = () => {
 
         <div className="w-1/2 flex items-start justify-start md:justify-center">
           <div>
-            <h2 className="font-medium text-gray-900 mb-5">Get in touch</h2>
+            <h2 className="font-medium text-gray-900 mb-5">Get in Touch</h2>
             <div className="text-sm space-y-2">
               <p>+1-234-567-890</p>
-              <p>contact@MahmoudSalem.dev</p>
+              <p>support@QuickCart.com</p>
+              <p>123 Main St, Tyr, Lebanon</p>
             </div>
           </div>
         </div>
       </div>
       <p className="py-4 text-center text-xs md:text-sm">
-        Copyright 2025 © Mahmoud.dev All Right Reserved.
+        Copyright 2025 © QuickCart All Rights Reserved. Follow us on
+        <a href="#" className="text-blue-500 hover:underline">
+          Facebook
+        </a>
+        ,
+        <a href="#" className="text-blue-500 hover:underline">
+          Twitter
+        </a>
+        ,
+        <a href="#" className="text-blue-500 hover:underline">
+          Instagram
+        </a>
+        .
       </p>
     </footer>
   );
